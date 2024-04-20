@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>Quartos Fiscais</h1>
+        <h1>Trimestres Fiscais</h1>
         <div class="container">
             <template v-for="quarter of quarters" v-bind:key="quarter.name">
                 <div class="quarter" v-bind:class="{ 'currentMonth': quarter.name == currentQuarterName }">
@@ -78,7 +78,6 @@ h2 {
     border: 1px solid #8f99a4;
     padding: 10px;
     margin: 10px;
-    font-size: 20px;
     background-color: #a4adb5;
 }
 

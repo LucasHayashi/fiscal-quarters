@@ -1,7 +1,7 @@
 <template>
     <div>
         <h1>Média de preços nos últimos 5 minutos</h1>
-        <h3>Pesquise por um símbolo para visualizar a média ( Atualizado a cada 1 segundo )</h3>
+        <h3>Pesquise por um símbolo de criptoativo ( Atualizado a cada 1 segundo )</h3>
         <input type="text" class="search-symbol" v-model="searchSymbol" @input="toUpperCase"
             placeholder="Ex: BTCUSDT" />
         <div v-if="searchSymbol">
@@ -19,7 +19,7 @@
                 <template v-for="streamSymbol of streamSymbols" v-bind:key="streamSymbol.symbol">
                     <div class="stream" v-on:click="removeStream(streamSymbol.symbol)">
                         <div class="stream-symbol">{{ streamSymbol.symbol }}</div>
-                        <div class="stream-symbol-overral">{{ streamSymbol.avgPrice ?? '...aguardando'}}</div>
+                        <div class="stream-symbol-overral">{{ streamSymbol.avgPrice ?? '...aguarde'}}</div>
                     </div>
                 </template>
             </div>
@@ -139,7 +139,7 @@ export default {
     min-width: 80px;
     padding: 10px;
     margin: 10px;
-    font-size: 20px;
+    text-align: center;
     background-color: #2c3e50;
     color: #e8eaec;
     cursor: pointer;
