@@ -1,24 +1,6 @@
 # fiscal-quarters
 
-## Project setup
-```
-npm install
-```
+Este é um projeto desenvolvido com Vue.Js 3, e tem como objetivo verificar qual é o trimestre fiscal ativo. 
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Também possui uma ferramenta adicional que se conecta com o websocket da Binance para verificar a média de preço de um criptoativo listado na exchange.
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
